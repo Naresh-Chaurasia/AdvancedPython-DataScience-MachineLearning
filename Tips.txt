@@ -1,0 +1,7 @@
+Pycharm Shortcuts
+-----------------
+Ctrl + P -- Method Arguments
+Ctrl + N -- Find File
+Ctrl + Q -- Documentation
+Ctrl+Shift+F -- Finding and Replacing Text in Project
+Shift + F6 -- Renaming file
