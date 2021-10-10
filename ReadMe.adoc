@@ -29,6 +29,10 @@ WARNING: WARNING
 
 == Python OOP : Four Pillars of OOP in Python 3 for Beginners Febin George
 
+=== Section 1: Introduction
+
+=== Section 2: Installation of Python
+
 === Section 3: Classes and Objects
 
 *Self can be replaced with another keyword, but using self is convention*
@@ -41,7 +45,17 @@ employee = Employee()
 employee.employeeDetails()
 ----
 
-* @staticmethod is decorator: Decorator are function that take a functions and extends its functionality.
+=== Section 4: Attributes and Methods
+
+* @staticmethod is decorator: Decorator are function that take a functions and extends its functionality. It does not have `self` keyword as argument.
+
+----
+@staticmethod
+def printWelcomeMessage():
+    print('Hello World')
+----
+
+=== Section 5: Abstraction and Encapsulation - The first two pillars of OOP
 
 === Section 6: Inheritance - The third pillar of OOP
 
@@ -248,3 +262,5 @@ An invariant in Object-Oriented programming refers to some set of conditions or 
 === Class Attributes, Methods, and Properties
 
 * This is because class blocks or blocks in general do not introduce new scopes in Python.
+
+== Design Patterns with Python by Gerald Britton
