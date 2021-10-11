@@ -1,6 +1,5 @@
 class A:
-    def method(self):
-        print('A')
+    pass
 
 class B(A):
     def method(self):
