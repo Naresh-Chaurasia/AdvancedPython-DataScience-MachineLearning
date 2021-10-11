@@ -27,6 +27,42 @@ WARNING: WARNING
 
 * Replication, Slicing, Protocols, Comprehensions, Class Invariant
 
+== Important Concepts
+
+=== Decorators
+
+* https://www.geeksforgeeks.org/decorators-in-python/
+
+----
+@gfg_decorator
+def hello_decorator():
+    print("Gfg")
+
+'''Above code is equivalent to -
+
+def hello_decorator():
+    print("Gfg")
+    
+hello_decorator = gfg_decorator(hello_decorator)'''
+
+#--------------------------------------------------#
+
+def decorator_function(func):
+    def my_inner_function():
+        print('Entering inner function')
+        func()
+        print('Exiting inner function')
+    return my_inner_function
+
+def hello_function():
+    print('I am hello function')
+
+
+hello_function = decorator_function(hello_function)
+print(type(hello_function))
+#hello_function()
+----
+
 == Python OOP : Four Pillars of OOP in Python 3 for Beginners Febin George
 
 === Section 1: Introduction
@@ -263,4 +299,10 @@ An invariant in Object-Oriented programming refers to some set of conditions or 
 
 * This is because class blocks or blocks in general do not introduce new scopes in Python.
 
-== Design Patterns with Python by Gerald Britton
+== Design Patterns in Python Dmitri Nesteruk
+
+=== Section 1: The SOLID Design Principles
+
+* So the *single responsibility principle* basically prevents you from making God objects. It enforces this idea that a class should have a single reason to change and that change should be somehow related to its primary responsibility.
+
+* Open for extension by closed for modification

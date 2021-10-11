@@ -1,10 +1,8 @@
-def create_adder(x):
+def create_adder_function(x):
     def adder(y):
-        return x+y
- 
+        return x + y
     return adder
- 
-add_15 = create_adder(15)
-print(type(add_15))
- 
-#print(add_15(10))
+
+outer_fun = create_adder_function(10)
+total = outer_fun(20)
+print(total)
