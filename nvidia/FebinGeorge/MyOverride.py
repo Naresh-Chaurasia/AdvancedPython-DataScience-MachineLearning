@@ -1,3 +1,4 @@
+# Exhibiting that one method is overriden and other is inherited
 class Car:
     def startEngine(self):
         self.power = 100
