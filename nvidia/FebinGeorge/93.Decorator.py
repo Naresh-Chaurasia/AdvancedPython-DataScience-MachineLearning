@@ -10,5 +10,5 @@ def hello_function():
 
 
 hello_function = decorator_function(hello_function)
-print(type(hello_function))
-#hello_function()
+#print(type(hello_function))
+hello_function()
