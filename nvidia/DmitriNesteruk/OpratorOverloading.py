@@ -2,6 +2,7 @@ class Square:
     def __init__(self, side):
         self.side = side
 
+    # It is not method call. It will not have self
     def __add__(s1, s2):
         return s1.side*4 + s2.side*4
 
